@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span{
+    color:#5f275a;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:#2e022a;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image:linear-gradient(black(100, 117, 183, 0.7), rgba(100, 117, 183,0.7)), url(images/top.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:white;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #eee;
+}
+
+header .navbar a:hover{
+    color:white;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #eee;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:white;
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#130101;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+body
+{
+    background: grey;
+}
+
+h1
+{
+    text-align: center;
+    margin: 50 px auto 100px;
+    color: white;
+}
+
+.main
+{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.service
+{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 20px -15px black;
+    z-index: 1;
+    transition: transform .7s;
+}
+
+.service-logo
+{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 10px solid grey;
+    margin: -90px auto 0;
+    background: grey;
+}
+
+.service-logo img
+{
+    width: 50px;
+    margin-top: 30px;
+}
+
+.service h4{
+    height: 35px;
+    width: 80%;
+    background: white;
+    margin: 50px auto;
+    position: relative;
+}
+
+.service h4::after
+{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, grey, white);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.service h4::before
+{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, grey, white);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.shadow1
+{
+    height: 200px;
+    width: 80%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px black;
+    transition: transform .7s;
+}
+
+.shadow2
+{
+    height: 200px;
+    width: 64%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -2;
+
+}
+.main:hover .service
+{
+    transform:translateY(-50px);
+}
+.main:hover .shadow1
+{
+    transform: translateY(-25px);
+}
